@@ -1,3 +1,3 @@
 module.exports = {
-  ReactRpg: require('./components/react-rpg'),
+  ReactRpgCustomized: require('./components/react-rpg'),
 };

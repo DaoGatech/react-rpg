@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactRpgPhoto from './react-rpg-photo';
 
-const ReactRpg = ({ imagesArray, padding = 0, columns = [1, 2, 3] }) => {
+const ReactRpgCustomized = ({ imagesArray, padding = 0, columns = [1, 2, 3] }) => {
   const imageNodes = imagesArray.map((arr, index) => {
     return (
       <ReactRpgPhoto key={index} url={arr.url} title={arr.title} desc={arr.desc} columns={columns} padding={padding} clickHandler={arr.clickHandler} />
@@ -27,16 +27,16 @@ const ReactRpg = ({ imagesArray, padding = 0, columns = [1, 2, 3] }) => {
   );
 };
 
-ReactRpg.propTypes = {
+ReactRpgCustomized.propTypes = {
   imagesArray: React.PropTypes.array.isRequired,
   columns: React.PropTypes.array,
   padding: React.PropTypes.number,
 };
 
-ReactRpg.defaultProps = {
+ReactRpgCustomized.defaultProps = {
   imagesArray: [],
   columns: [1, 2, 3],
   padding: 0,
 };
 
-export default ReactRpg;
+export default ReactRpgCustomized;
