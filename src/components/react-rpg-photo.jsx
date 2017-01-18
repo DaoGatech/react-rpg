@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/styles.css';
 
 const ReactRpgPhoto = ({ url, padding, clickHandler = null }) => {
   const pointer = clickHandler ? 'pointer' : 'auto';
@@ -25,6 +26,10 @@ const ReactRpgPhoto = ({ url, padding, clickHandler = null }) => {
   return (
     <div className="imageGridItem" style={styles.imageGridItem}>
       <a onClick={ clickHandler ? clickHandler.bind(this, url) : null }>
+        <div className="image-title-holder">
+          <div className="image-title"> Test2 </div>
+          <div className="image-description"> Test3 </div>
+        </div>
         <div className="imageWrapper" style={styles.imageWrapper}></div>
       </a>
     </div>
