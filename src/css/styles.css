@@ -31,6 +31,11 @@
 }
 
 .imageWrapper:hover {
-    -webkit-filter: brightness(60%);
+    filter: brightness(60%);
 }
+
+.image-title-holder:hover ~ .imageWrapper{
+    filter: brightness(60%);
+}
+
 
