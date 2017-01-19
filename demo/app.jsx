@@ -1,7 +1,7 @@
 /* global document:false */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ReactRpg } from '../src/index';
+import { ReactRpgCustomized } from '../src/index';
 
 const previewStyles = {
   top: '50%',
@@ -44,7 +44,7 @@ class App extends React.Component {
 
   getImages() {
     return [
-      { url: 'http://james-oldfield.github.io/thailand/images/girl.adc2e72a.jpg', clickHandler: this.imagePopup.bind(this) },
+      { title:"test", desc: "desc", url: 'http://james-oldfield.github.io/thailand/images/girl.adc2e72a.jpg', clickHandler: this.imagePopup.bind(this) },
       { url: 'http://james-oldfield.github.io/thailand/images/RecliningBuddha.a1705a9a.jpg', clickHandler: this.imagePopup.bind(this) },
       { url: 'http://im.vsco.co/1/52d992e43ad70287923/545e7da07267083a1e8b4662/vsco_110814.jpg?w=709&dpr=2', clickHandler: this.imagePopup.bind(this) },
       { url: 'http://im.vsco.co/1/52d992e43ad70287923/53ab2a567167083b658b45df/vsco_062514.jpg?w=300&dpr=2', clickHandler: this.imagePopup.bind(this) },
@@ -68,7 +68,7 @@ class App extends React.Component {
 
           { this.state.popUp !== false ? <ImagePreview url={this.state.popUp} /> : null }
 
-        <ReactRpg imagesArray={this.getImages()} columns={[1, 2, this.state.columns]} padding={this.state.padding} />
+        <ReactRpgCustomized imagesArray={this.getImages()} columns={[1, 2, this.state.columns]} padding={this.state.padding} />
       </div>
     );
   }

@@ -34,7 +34,7 @@
     filter: brightness(60%);
 }
 
-.image-title-holder:hover ~ .imageWrapper {
+.image-title-holder:hover ~ .imageWrapper{
     filter: brightness(60%);
 }
 

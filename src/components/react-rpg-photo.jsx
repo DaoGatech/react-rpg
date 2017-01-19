@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import '../styles.css';
 
 const ReactRpgPhoto = ({ url, title, desc, padding, clickHandler = null }) => {
   const pointer = clickHandler ? 'pointer' : 'auto';
